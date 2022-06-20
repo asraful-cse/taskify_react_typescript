@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import InputFeild from "./components/InputFeild";
+import Navbar from "./components/Navbar";
 import TodoList from "./components/TodoList";
 import { Todo } from "./model";
 
@@ -18,7 +19,8 @@ const App: React.FC = () => {
 
   console.log(todos);
   return (
-    <div className="App">
+    <div className="App" >
+      <Navbar />
       <div className="heading">Taskify</div>
       <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
       {/* {todos.map((t) => (

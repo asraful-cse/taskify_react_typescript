@@ -36,7 +36,7 @@
 }
 
 .input_submit:hover {
-  background-color: rgb(29, 120, 97);
+  background-color: rgb(232, 250, 245);
 }
 
 .input_submit:active {
@@ -54,30 +54,28 @@
   flex-direction: column;
   width: 47.5%;
   padding: 15px;
-  background-color: rgb(155 231 165);
+  /* background-color: rgb(172 231 233); */
 }
 .todos__single {
   display: flex;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 12px;
+  padding: 11px;
   margin-top: 15px;
-  background-image: url("https://image.shutterstock.com/image-photo/smooth-elegant-lilac-silk-satin-600w-1610767102.jpg");
+  /* background-image: url("https://image.shutterstock.com/image-photo/smooth-elegant-lilac-silk-satin-600w-1610767102.jpg"); */
   transition: 0.2s;
-}
-.todo_single_text {
-}
-
-.icon {
+  background-color: #f3f7ee42;
 }
 
 
-
+.scrollStyle{
+  --bs-scroll-height: 100px;
+}
 
 
 /* ------------------------------- */
 .input {
   display: flex;
-  width: 95%;
+  /* width: 95%; */
   position: relative;
   align-items: center;
 }
@@ -106,19 +104,19 @@
   right: 0px;
   border: none;
   font-size: 15px;
-  background-color: #2f74c0;
-  color: white;
+  background-color: #b0e6ea;
+  color: #5c436c;
   transition: 0.2s all;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px #c5e7eb;
 }
 
 .input_submit:hover {
-  background-color: #388ae2;
+  background-color: #1ca20d;
 }
 
 .input_submit:active {
   transform: scale(0.8);
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px rgb(226, 217, 217);
 }
 
 .container {
