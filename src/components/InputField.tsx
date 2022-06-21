@@ -1,14 +1,15 @@
 import React, { useRef } from "react";
 import "./style.css";
 
-interface Props {
+interface props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
   handleAdd: (e: React.FormEvent) => void;
 }
 
-const InputFeild: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
+const InputField: React.FC<props> = ({ todo, setTodo, handleAdd }) => {
   const inputRef = useRef<HTMLInputElement>(null);
+
   return (
     <form
       className="input"
@@ -32,4 +33,4 @@ const InputFeild: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
   );
 };
 
-export default InputFeild;
+export default InputField;
